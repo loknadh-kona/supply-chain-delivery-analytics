@@ -63,7 +63,7 @@ Raw CSV (180,519 rows, 53 columns)
 ### Page 1 — Executive Summary
 > *Overall supply chain health at a glance*
 
-![Executive Summary](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Screenshots/page1_executive_summary.png)
+![Executive Summary](Screenshots/page1_executive_summary.png)
 
 **What it shows:**
 - 7 KPI scorecards: OTD (40.9%), OTIF (40.9%), SLA Breach (57.3%), Perfect Order (14%), Revenue ($36.8M), Profit ($4.0M), Avg Days to Ship (3.5)
@@ -75,7 +75,7 @@ Raw CSV (180,519 rows, 53 columns)
 ### Page 2 — Regional Analysis
 > *Which regions are failing — and by exactly how much?*
 
-![Regional Analysis](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Screenshots/page2_regional_analysis.png)
+![Regional Analysis](Screenshots/page2_regional_analysis.png)
 
 **What it shows:**
 - All 23 global regions ranked worst → best by OTD rate
@@ -88,7 +88,7 @@ Raw CSV (180,519 rows, 53 columns)
 ### Page 3 — SLA Heatmap
 > *Which region + shipping mode combination is most broken?*
 
-![SLA Heatmap](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Screenshots/page3_sla_heatmap.png)
+![SLA Heatmap](Screenshots/page3_sla_heatmap.png)
 
 **What it shows:**
 - 23 × 4 interactive matrix (Regions × Shipping Modes)
@@ -101,7 +101,7 @@ Raw CSV (180,519 rows, 53 columns)
 ### Page 4 — Trend Analysis
 > *Has performance improved over 3 years?*
 
-![Trend Analysis](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Screenshots/page4_trend_analysis.png)
+![Trend Analysis](Screenshots/page4_trend_analysis.png)
 
 **What it shows:**
 - 36-month OTD vs SLA Breach trend lines (2015–2017)
@@ -114,21 +114,21 @@ Raw CSV (180,519 rows, 53 columns)
 ## 🐍 Python EDA Highlights
 
 ### Delivery Performance by Shipping Mode
-![Delay by Shipping Mode](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Python/plot1_delay_by_shipmode.png)
+![Delay by Shipping Mode](Python/plot1_delay_by_shipmode.png)
 
 *Predicted risk score vs actual late delivery rate — First Class predicted risky AND actually worst performer*
 
 ---
 
 ### On-Time Delivery Rate by Region
-![Delay by Region](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Python/plot2_delay_by_region.png)
+![Delay by Region](Python/plot2_delay_by_region.png)
 
 *All 23 regions clustered between 38–46% OTD — no region close to the 85% benchmark*
 
 ---
 
 ### SLA Breach Heatmap (Region × Shipping Mode)
-![SLA Heatmap EDA](https://raw.githubusercontent.com/KrishnaSai315/supply-chain-logistics-dashboard/main/Python/plot3_sla_heatmap.png)
+![SLA Heatmap EDA](Python/plot3_sla_heatmap.png)
 
 *Cross-analysis that first surfaced the hidden delay story — engineered in Python before SQL*
 
@@ -203,7 +203,7 @@ Standard Class is best performer (57.7% OTD, 39.8% breach) at the lowest cost. U
 ## 🗂️ Project Structure
 
 ```
-supply-chain-logistics-dashboard/
+supply-chain-delivery-analytics/
 │
 ├── 📁 Excel/
 │   └── Working_Data.csv
